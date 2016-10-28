@@ -1,0 +1,18 @@
+﻿<table style="width:100%">
+    <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Idade</th>
+    </tr>
+    <tr ng-repeat="pessoa in $ctrl.pessoas track by $index">
+        <td ng-bind="pessoa.nome"></td>
+        <td ng-bind="pessoa.email"></td>
+        <td ng-bind="pessoa.idade"></td>
+        <td>
+            <button type="button" ng-click="$ctrl.editarPessoa(pessoa)">editar</button>
+            <button type="button" ng-click="$ctrl.excluirPessoa(pessoa)">excluir</button>
+        </td>
+    </tr>
+</table>
+
+<button type="button" ng-click="$ctrl.incluirPessoa()">incluir pessoa</button>

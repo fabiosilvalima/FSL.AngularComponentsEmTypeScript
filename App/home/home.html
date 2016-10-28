@@ -1,0 +1,19 @@
+﻿<table style="width:100%" border="1">
+    <tr>
+        <td style="width:60%">
+
+            <fsl-pessoa layout="lista-edicao"
+                        model="$ctrl.pessoas"
+                        on-event="$ctrl.onChanges(evento, pessoa, index)"></fsl-pessoa>
+
+        </td>
+        <td style="width:40%">
+
+            <fsl-pessoa layout="edicao"
+                        model="$ctrl.pessoa"
+                        on-event="$ctrl.onChanges(evento, pessoa, index)"></fsl-pessoa>
+
+        </td>
+    </tr>
+</table>
+

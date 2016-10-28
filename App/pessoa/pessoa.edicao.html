@@ -1,0 +1,15 @@
+﻿Nome: <input type="text"
+             ng-model="$ctrl.pessoa.nome" 
+             ng-model-options="{ updateOn: 'blur' }" /><br /> 
+
+E-mail: <input type="text" 
+               ng-model="$ctrl.pessoa.email" 
+               ng-model-options="{ updateOn: 'blur' }" /><br />
+
+Idade: <input type="text" 
+              ng-model="$ctrl.pessoa.idade" 
+              ng-model-options="{ updateOn: 'blur' }" /><br />
+
+<button type="button" 
+        ng-click="$ctrl.salvarPessoa()" 
+        ng-disabled="!$ctrl.pessoa.nome">salvar pessoa</button>
