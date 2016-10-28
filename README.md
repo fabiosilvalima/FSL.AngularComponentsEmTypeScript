@@ -30,9 +30,9 @@ Qual a proposta da solução?
 A tela **"index.html"** tem uma lista de pessoas onde é possível incluir, editar e excluir os dados de cada pessoa. O componente é usado para essas operações em uma pessoa. 
 
 ```sequence
-Tela->Pessoa: Tela cria o componente
+Home->Pessoa: Home cria o componente
 Note right of Pessoa: Operações no componente
-Pessoa-->Tela: Componente responde à tela em eventos
+Pessoa-->Home: Componente responde à tela em eventos
 ```
 
 **PREMISSAS:**
