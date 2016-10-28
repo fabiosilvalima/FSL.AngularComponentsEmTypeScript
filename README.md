@@ -20,7 +20,7 @@ O que há no código fonte?
 
 > - Você vai precisar instalar um plugin do **TypeScript** no seu **Visual Studio**. Faça download dele [aqui][1].
 > - Não há necessidade de configuração ou implementação de backend.
-> - Tudo começa com o **index.html**. Abra o arquivo e pronto.
+> - Abra a solution e chame o arquivo index.html.
 
 ---
 
@@ -51,7 +51,13 @@ Referências:
 - **Angular** download e tutoriais [aqui][2];
 - Extension para Visual Studio **File Nesting** download e tutoriais [aqui][3];
 
+Lincença:
+---
+
+- [Licença MIT][4]
+
 
   [1]: http://typescript.org/
   [2]: https://angularjs.org/
   [3]: https://visualstudiogallery.msdn.microsoft.com/3ebde8fb-26d8-4374-a0eb-1e4e2665070c
+  [4]: https://github.com/fabiosilvalima/FSL.AngularComponentsEmTypeScript/blob/master/LICENSE
