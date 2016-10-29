@@ -12,7 +12,7 @@ O que há no código fonte?
 #### <i class="icon-file"></i> FSL.AngularComponentsEmTypeScript
 
 - Solution do Visual Studio para facilitar;
-- Bibliotecas do framework Angular Core 1.5;
+- Bibliotecas do framework Angular 1.5;
 - Arquivos HTML dos templates;
 - Arquivos TypeScript e JavaScript que compõem a solução; 
 
@@ -27,7 +27,7 @@ O que há no código fonte?
 Qual a proposta da solução?
 ---
 
-A tela **"index.html"** tem uma lista de pessoas onde é possível incluir, editar e excluir os dados de cada pessoa. O componente é usado para essas operações em uma pessoa. 
+O **HomeComponent** chama o **PessoaComponent** passando uma lista de pessoas onde é possível incluir, editar e excluir os dados de cada pessoa. O componente é usado para essas operações em uma pessoa. 
 
 ```sequence
 Home->Pessoa: Home cria o componente
@@ -42,6 +42,30 @@ Pessoa-->Home: Componente responde à tela em eventos
 - Componentes devem ser reutilizáveis em qualquer lugar;
 - Componentes podem ter mais de um template;
 
+**Index.html**
+
+```html
+<body ng-cloak="">
+	<fsl-home></fsl-home>
+</body>
+```
+
+**home.html** (lista de pessoas)
+
+```html
+<fsl-pessoa layout="lista-edicao"
+			model="$ctrl.pessoas"
+            on-event="$ctrl.onChanges(evento, pessoa, index)"></fsl-pessoa>
+```
+
+**home.html** (uma pessoa)
+
+```html            
+<fsl-pessoa layout="edicao"
+            model="$ctrl.pessoa"
+            on-event="$ctrl.onChanges(evento, pessoa, index)"></fsl-pessoa>
+```  
+ 
 ----------
 
 Referências:
@@ -50,6 +74,7 @@ Referências:
 - **TypeScript** download e tutoriais [aqui][1];
 - **Angular** download e tutoriais [aqui][2];
 - Extension para Visual Studio **File Nesting** download e tutoriais [aqui][3];
+- Angular Guidelines de John Papa veja [aqui][5]
 
 Lincença:
 ---
@@ -61,3 +86,4 @@ Lincença:
   [2]: https://angularjs.org/
   [3]: https://visualstudiogallery.msdn.microsoft.com/3ebde8fb-26d8-4374-a0eb-1e4e2665070c
   [4]: https://github.com/fabiosilvalima/FSL.AngularComponentsEmTypeScript/blob/master/LICENSE
+  [5]: https://github.com/johnpapa/angular-styleguide
