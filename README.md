@@ -1,46 +1,46 @@
-# FSL.AngularComponentsEmTypeScript
+# FSL.AngularComponentsWithTypeScript
 
-**Angular Component em TypeScript**
+**Angular Component with TypeScript**
 
-O objetivo é mostrar o conceito de **"componente"** usando **Angular Components** separando as responsabilidades na aplicação. Considero o uso de **TypeScript** pois é muito mais produtivo e diminui chances de erro em tempo de execução.
-
----
-
-O que há no código fonte?
----
-
-#### <i class="icon-file"></i> FSL.AngularComponentsEmTypeScript
-
-- Solution do Visual Studio para facilitar;
-- Bibliotecas do framework Angular 1.5;
-- Arquivos HTML dos templates;
-- Arquivos TypeScript e JavaScript que compõem a solução; 
-
-> **Observação:**
-
-> - Você vai precisar instalar um plugin do **TypeScript** no seu **Visual Studio**. Faça download dele [aqui][1].
-> - Não há necessidade de configuração ou implementação de backend.
-> - Abra a solution e chame o arquivo index.html.
+The goal is to show the component pattern and concept using **Angular Components**. I demonstrate how to separate all responsabilities in application. I highly recommend the use of **TypeScript**  it is much more productive and reduces chances of error at runtime.
 
 ---
 
-Qual a proposta da solução?
+What is in the source code?
 ---
 
-O **HomeComponent** chama o **PessoaComponent** passando uma lista de pessoas onde é possível incluir, editar e excluir os dados de cada pessoa. O componente é usado para essas operações em uma pessoa. 
+#### <i class="icon-file"></i> FSL.AngularComponentsWithTypeScript
+
+- Visual Studio solution file;
+- Angular 1.5.8 library;
+- HTML files;
+- TypeScript files for our solution; 
+
+> **Remarks:**
+
+> - You will need to install **TypeScript** plugin for **Visual Studio**. Download it [here][1].
+> - There is not need to configure anything in backend.
+> - Open solution file, press F5 and call index.html.
+
+---
+
+What is the goal?
+---
+
+The **HomeComponent** uses **PessoaComponent** that receives a list of person to insert, update and delete each one of those person.  The objective of the component is to perform those features. 
 
 ```sequence
-Home->Pessoa: Home cria o componente
-Note right of Pessoa: Operações no componente
-Pessoa-->Home: Componente responde à tela em eventos
+Home->Pessoa: Home create the component
+Note right of Pessoa: Features on the component
+Pessoa-->Home: Component fire events to Home
 ```
 
-**PREMISSAS:**
-- Componentes devem ser independentes;
-- Componentes não devem se possível manipular o mundo externo e não devem compartilhar o escopo;
-- Componentes devem responder alterações por evento; 
-- Componentes devem ser reutilizáveis em qualquer lugar;
-- Componentes podem ter mais de um template;
+**Assumptions:**
+- Components should be independents;
+- Components should be stateless;
+- Components should fire events on changes; 
+- Components should be reusable;
+- Components could have more than one template;
 
 **Index.html**
 
@@ -50,7 +50,7 @@ Pessoa-->Home: Componente responde à tela em eventos
 </body>
 ```
 
-**home.html** (lista de pessoas)
+**home.html** (list of person)
 
 ```html
 <fsl-pessoa layout="lista-edicao"
@@ -58,7 +58,7 @@ Pessoa-->Home: Componente responde à tela em eventos
             on-event="$ctrl.onChanges(evento, pessoa, index)"></fsl-pessoa>
 ```
 
-**home.html** (uma pessoa)
+**home.html** (person)
 
 ```html            
 <fsl-pessoa layout="edicao"
@@ -68,18 +68,18 @@ Pessoa-->Home: Componente responde à tela em eventos
  
 ----------
 
-Referências:
+References:
 ---
 
-- **TypeScript** download e tutoriais [aqui][1];
-- **Angular** download e tutoriais [aqui][2];
-- Extension para Visual Studio **File Nesting** download e tutoriais [aqui][3];
-- Angular Guidelines de John Papa veja [aqui][5]
+- **TypeScript** download e tutoriais [here][1];
+- **Angular** download e tutoriais [here][2];
+- **File Nesting** extension for Visual Studio download e tutoriais [here][3];
+- John Papa´s Angular guidelines [read here][5]
 
-Lincença:
+Licence:
 ---
 
-- [Licença MIT][4]
+- [Licence MIT][4]
 
 
   [1]: http://typescript.org/
