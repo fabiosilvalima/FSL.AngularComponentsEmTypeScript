@@ -4,6 +4,8 @@
 
 The goal is to show the component pattern and concept using **Angular Components**. I demonstrate how to separate all responsabilities in application. I highly recommend the use of **TypeScript**  it is much more productive and reduces chances of error at runtime.
 
+![enter image description here](https://fabiosilvalima.files.wordpress.com/2016/10/angular-component.png)
+
 > **LIVE DEMO:**
 > 
 http://codefinal.com/FSL.AngularComponentTypeScript/
