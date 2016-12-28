@@ -7,3 +7,4 @@
 /packages
 /obj/Debug
 *.user
+/obj/Release

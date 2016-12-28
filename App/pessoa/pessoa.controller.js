@@ -62,4 +62,3 @@ var App;
         ];
     })(Pessoa = App.Pessoa || (App.Pessoa = {}));
 })(App || (App = {}));
-//# sourceMappingURL=pessoa.controller.js.map

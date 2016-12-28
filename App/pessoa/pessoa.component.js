@@ -16,4 +16,3 @@
         .module('app.pessoa')
         .component('fslPessoa', new PessoaComponent());
 })();
-//# sourceMappingURL=pessoa.component.js.map

@@ -4,4 +4,3 @@
         'app.core'
     ]);
 })();
-//# sourceMappingURL=pessoa.module.js.map
