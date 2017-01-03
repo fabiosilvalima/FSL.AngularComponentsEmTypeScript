@@ -8,7 +8,13 @@ The goal is to show the component pattern and concept using **Angular Components
 
 > **LIVE DEMO:**
 > 
-http://codefinal.com/FSL.AngularComponentTypeScript/
+> http://codefinal.com/FSL.AngularComponentTypeScript/
+
+> **FULL ARTICLE:**
+>
+> English: https://fabiosilvalima.net/2016/10/27/angular-component-with-typescript/
+>
+> Português: https://fabiosilvalima.com.br/2016/10/27/angular-component-em-typescript/
 
 ---
 
@@ -80,7 +86,7 @@ References:
 - **TypeScript** download e tutoriais [here][1];
 - **Angular** download e tutoriais [here][2];
 - **File Nesting** extension for Visual Studio download e tutoriais [here][3];
-- John Papa�s Angular guidelines [read here][5]
+- John Papa´s Angular guidelines [read here][5]
 
 Licence:
 ---
