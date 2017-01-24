@@ -4,7 +4,7 @@
 
 The goal is to show the component pattern and concept using **Angular Components**. I demonstrate how to separate all responsabilities in application. I highly recommend the use of **TypeScript**  it is much more productive and reduces chances of error at runtime.
 
-![enter image description here](https://fabiosilvalima.files.wordpress.com/2016/10/angular-component.png)
+![enter image description here](https://fabiosilvalima.net/wp-content/uploads/2017/01/fabiosilvalima-angular-component-typescript.jpg)
 
 > **LIVE DEMO:**
 > 
@@ -12,9 +12,9 @@ The goal is to show the component pattern and concept using **Angular Components
 
 > **FULL ARTICLE:**
 >
-> English: https://fabiosilvalima.net/2016/10/27/angular-component-with-typescript/
+> English: https://fabiosilvalima.net/en/angularjs-component-typescript/
 >
-> Português: https://fabiosilvalima.com.br/2016/10/27/angular-component-em-typescript/
+> Português: https://fabiosilvalima.net/angularjs-component-em-typescript/
 
 ---
 
